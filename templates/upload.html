@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    {%raw xsrf_form_html() %}
+    <p><input type="file" value="选择文件" name="file"></p>
+    <p><input type="submit" value="提交"></p>
+
+</form>
+</body>
+</html>
